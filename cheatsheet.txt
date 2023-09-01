@@ -1,0 +1,18 @@
+git config --global user.name Ritik
+git config --global user.email "ritikbansal621@gmail.com"
+$ touch .gitignore         << initializing gitignore file and in this file we pass that file whic was not important
+$ git init                 << initializing git file
+$ git add .                << add file to our git
+$ git commit -m "Initial Commit"          << This was our initial commit
+$ git status                              << This is used to check the status
+$ git remote add origin git0000@github.com:Ritik216/Dance-Website.git
+$ git push origin master
+This code gives error because we make this repository as private. So we have to generate ssh key and add into our github account under settings->ssh key->add key
+
+$ ssh-keygen -t rsa -b 4096 -C "ritikbansal621@gmail.com"
+
+$ cat /c/Users/ritik/.ssh/id_rsa.pub Through this we generate our ssh key
+This is the ssh key
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCePAjptsJ6lJrpj2IW4D36RUqnuCbnRZyG+kHGriL1F+Hl2ebKj4Cbp+nLeHvjbO18xsNCaF3UuMTVcUp0q+nyv25hEVOqLLNmp2NUNbRyfXFZGzDdXTF+x/O8Nd3ysssVbdH99Q1shcMBfvkZ1clXJ+Vv1gL5enNrYL5xum9NNg30pH7T+I9ejn6SBuY7KlSEv/vPeZ3dQueS0YfY/JdLmPxCjAvzQINHcBbaTgc3I1BqjJ3Fej0L/jL29IU8JT9SD8EWrtVvwhafzAiKtBFYW7mu2lXJ2vo8Bbx776tsYtD4VyLFYsSlSmV+cMog+tDr8I03vG5jnHqzUZr8pprnh/XuglNZYb5W/udoJiT0dX1fa2ljW7bDp7GDFIwdGZAjEM+djeCk0h/wlF9ie95psPwcUEtazGl3UqZXNcEbm8dHIqs9Twe+HHh0jwbZjyiSTyALmg1Eqp6nenc9BvENoqqYZUSRJ5AnU9EwPW86RtoJHwi7YXQdTaOwoBdBihkNd2l2OE1uG+HHuQx/4mM+BbQN43ND6MOqiilRD9ee0OHwzZWMEEa0ueN38DQ7YdGYQb1OQs/HuQJi6pRJ2n+wPIQjgTXSW0qHAR80qkr6e9s6611dOM9PS0y1dFeMOMw7HKMt/sdIOdZBLmO6YbrmdwqV8DQj9cuV2iZokjT4HQ== ritikbansal621@gmail.com
+
+$ git push origin master: Now this will work fine
