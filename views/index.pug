@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ritik Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul 
+          div#logo
+            img(src="/static/img/logo.jpg")
+            | HDA
+          li #[a(href='/') Home ]
+          li #[a(href='/') About]
+          li #[a(href='/') Services]
+          li #[a(href='/') Class Infos]
+          li #[a(href='/') Contact us]
+
+    section#introSection
+      div  Welcome to Ritik's Dance Academy  
+      div.small Eat Sleep Dance Repeat
+    
+    section#missionSection 
+      h2 Our Mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+            div.card-img
+                img(src="/static/img/1.jpg")
+            div.card-content
+                p This is the best dance academy of the universe
+      div.card
+        h3 Dance the way you like 
+        div.card-box
+            div.card-img
+                img(src="/static/img/2.jpg")
+            div.card-content
+                p This is the best dance academy of the universe
+      div.card
+        h3 Expert Teaching
+        div.card-box
+            div.card-img
+                img(src="/static/img/3.jpg")
+            div.card-content
+                p This is the best dance academy of the universe
+      
+    section#sponsersSection 
+      h2 Our Sponsers  
+      div#sponsers
+        img(src='/static/img/apple.png', alt= 'Sponser Image', class="spImage" )
+        img(src='/static/img/microsoft.png', alt= 'Sponser Image', class="spImage" )
+        img(src='/static/img/skype.png', alt= 'Sponser Image', class="spImage" )
+        img(src='/static/img/dell1.png', alt= 'Sponser Image', class="spImage" )
+    footer#footer 
+      | Copyright © 2019 RitikDanceAcademy.com | All Rights are Reserved.
+    script
+      include ../static/index.js

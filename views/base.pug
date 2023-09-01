@@ -1,0 +1,27 @@
+//- layout.pug or base.pug
+
+doctype html
+html
+  head
+    title Ritik Dance Academy
+    block scripts
+    block style
+      
+  body 
+     nav#navbar
+      ul 
+          div#logo
+            img(src="/static/img/logo.jpg")
+            | Let's Dance
+          li #[a(href='/') Home ]
+          li #[a(href='/about') About]
+          li #[a(href='/') Services]
+          li #[a(href='/') Class Infos]
+          li #[a(href='/contact') Contact us]
+
+  body
+    block content
+    footer#footer 
+      | Copyright © 2019 RitikDanceAcademy.com | All Rights are Reserved.
+
+      

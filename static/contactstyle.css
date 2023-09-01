@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    /* box-sizing: border-box; */
+    padding: 0;
+}
+
+/* Navbar styling */
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+}
+#logo img{
+    height: 40px;
+    filter: invert(1);
+}
+#navbar{
+    /* background: linear-gradient(to bottom, #ccffff 0%, #cc0099 100%); */
+    background: linear-gradient(to top right, #cc00cc 0%, #6600ff 100%);
+
+    padding: 13px 14px;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center
+    ;
+    
+    
+}
+#navbar li{
+    list-style: none;
+    
+
+}
+#navbar li a:hover{
+    color: black;
+    font-size: 50px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    padding: 13px 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/* Footer Styling */
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: linear-gradient(to bottom, #ccffff 0%, #ffcc99 100%);
+
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* Contact pug styling */
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+}
+
+.myInput{
+    width: 400px;
+    margin: 12px;
+    padding: 9px;
+    border: 2px solid black;
+    /* color: black; */
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Button styling */
+.btn{
+    margin-top: 14px;
+    padding: 10px;
+    width: 80px;
+    background: linear-gradient(to bottom, #ccffff 0%, #9966ff 100%);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

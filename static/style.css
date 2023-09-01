@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    /* box-sizing: border-box; */
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+}
+#logo img{
+    height: 40px;
+    filter: invert(1);
+}
+#navbar{
+    /* background-color: rgb(84, 64, 99); */
+    padding: 13px 14px;
+    background: linear-gradient(to top right, #cc00cc 0%, #00ffcc 100%);
+
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center
+    ;
+    
+    
+}
+#navbar li{
+    list-style: none;
+    
+
+}
+#navbar li a:hover{
+    color: greenyellow;
+    font-size: 50px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: black;
+    padding: 13px 30px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/* Intro Section */
+#introSection{
+    padding-bottom: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    background: url('/static/letsdance.jpg') no-repeat center center/cover ;
+    height: 500px;
+    background-color: red;
+}
+#introSection div.small{
+    font-size: 30px;
+    color: #bfaca6;
+}
+#introSection div:hover{
+    font-size: 50px;
+}
+
+/* Mission Section */
+#missionSection{
+    height: 330px;
+    background-color: rgb(244, 240, 240);
+}
+
+#missionSection h2{
+    text-align: center;
+    padding: 13px;
+
+
+}
+
+/* Adding some animation in mission */
+.card{
+    
+        transform:
+          perspective(750px)
+          translate3d(0px, 0px, -250px)
+          rotateX(0deg)
+          scale(0.9, 0.9);
+        border-radius: 20px;
+        border: 5px solid #e6e6e6;
+        box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+        transition: 0.4s ease-in-out transform;
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 30%;
+        margin: 23px 23px;
+        height: 200px;
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        &:hover {
+          transform: translate3d(0px, 0px, -250px);
+        }
+      
+      
+      
+}
+
+/* .card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 30%;
+    margin: 23px 23px;
+    height: 200px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+} */
+
+.card h3{
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 100px;
+    padding: 0 15px;
+    margin: 13px 20px;
+
+}
+
+.card-img img{
+    height: inherit;
+    width: 100%;
+    filter: invert(1);
+}
+
+.card-content p{
+    font-size: 20px;
+}
+#sponsersSection{
+    height: 300px;
+    background: linear-gradient(to bottom, #33ccff 0%, #9966ff 100%);
+
+
+}
+
+#sponsersSection h2{
+    text-align: center;
+    padding: 13px;
+
+}
+#sponsers{
+    height: 147px;
+    max-width: 1000px;
+    margin: 27px auto;
+}
+.spImage{
+    height: inherit;
+    margin: 18px;
+    filter: invert(1);
+    width: 200px;
+
+        transform:
+          perspective(900px)
+          rotateX(0deg)
+          scale(0.7);
+        box-shadow: 0px 20px 100px #555;
+        transition:0.5s ease all;
+      
+        &:hover {
+          transform:
+            rotate(0deg)
+            scale(1)
+            translateY(10px);
+        }
+      
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
